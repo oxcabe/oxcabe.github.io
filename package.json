@@ -1,5 +1,6 @@
 {
-  "name": "",
+  "name": "oxcabe",
+  "private": "true",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -13,5 +14,6 @@
     "astro": "^4.6.1",
     "@astrojs/check": "^0.5.10",
     "typescript": "^5.4.5"
-  }
+  },
+  "packageManager": "pnpm@8.10.5"
 }
