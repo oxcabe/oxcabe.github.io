@@ -1,6 +1,5 @@
 {
-  "name": "oxcabe",
-  "private": "true",
+  "name": "",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -11,9 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.6.1",
+    "@astrojs/mdx": "^2.3.1",
+    "@astrojs/rss": "^4.0.5",
+    "@astrojs/sitemap": "^3.1.4",
+    "astro": "^4.6.3",
     "@astrojs/check": "^0.5.10",
     "typescript": "^5.4.5"
-  },
-  "packageManager": "pnpm@8.10.5"
+  }
 }
