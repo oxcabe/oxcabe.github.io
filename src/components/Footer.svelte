@@ -3,5 +3,5 @@
 </script>
 
 <footer class="flex justify-center">
-	<span>&copy; {today.getFullYear()} Óscar Carrasco. All rights reserved.</span>
+	<span class="text-center">&copy; {today.getFullYear()} Óscar Carrasco. All rights reserved.</span>
 </footer>
