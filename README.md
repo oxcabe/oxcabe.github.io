@@ -2,4 +2,4 @@
 
 > 🟢 Website is live at https://oxca.be 
 
-Welcome! This repository contains the sources and content that is built into my website.
+This repository contains the sources and content that builds into my website.
