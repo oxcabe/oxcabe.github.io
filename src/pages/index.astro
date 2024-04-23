@@ -1,9 +1,10 @@
 ---
 import DefaultLayout from "../layouts/Default.astro";
+import BinaryClock from "../components/BinaryClock.svelte";
 ---
 
 <DefaultLayout>
   <main class="flex justify-center">
-    <h1 class="text-5xl">nothing to see here... for now 👀</h1>
+    <BinaryClock client:load />
   </main>
 </DefaultLayout>
