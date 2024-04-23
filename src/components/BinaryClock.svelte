@@ -13,18 +13,23 @@
    * @returns String array with the binary representation of `num` in segments
    *  of size `segmentSize`.
    */
-  const numberToBinarySegments = (num: number, segmentSize: number): String[] => {
+  const numberToBinarySegments = (
+    num: number,
+    segmentSize: number,
+  ): String[] => {
     let numBinaryString = num.toString(2);
     const regex = new RegExp(`.{1,${segmentSize}}`, "g");
 
-    const padding = "0".repeat(segmentSize - numBinaryString.length % segmentSize);
+    const padding = "0".repeat(
+      segmentSize - (numBinaryString.length % segmentSize),
+    );
     numBinaryString = `${padding}${numBinaryString}`;
 
     return numBinaryString.match(regex) || [];
   };
 </script>
 
-<article class="grid grid-rows-2 grid-flow-col gap-4 text-2xl">
+<article id="binaryclock" class="grid grid-rows-2 grid-flow-col gap-4 text-2xl">
   {#each numberToBinarySegments(date, 4) as segment}
     <span>{segment}</span>
   {/each}

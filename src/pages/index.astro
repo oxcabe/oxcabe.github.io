@@ -4,7 +4,19 @@ import BinaryClock from "../components/BinaryClock.svelte";
 ---
 
 <DefaultLayout>
-  <main class="flex justify-center">
-    <BinaryClock client:load />
+  <main class="flex flex-col sm:w-2/3 xl:w-2/5 justify-evenly">
+    <section>
+      <h1 class="text-2xl font-bold">Hello!</h1>
+      <p class="mt-8">
+        Welcome to my website! It should also work for non-JavaScript users, so,
+        if something appears to be broken without JS, reach out to me so I can
+        fix it.
+      </p>
+      <p class="mt-4">Thanks for visiting!</p>
+      <p class="mt-8 float-right">- Óscar Carrasco, a.k.a `oxcabe`</p>
+    </section>
+    <section>
+      <BinaryClock client:only="svelte" />
+    </section>
   </main>
 </DefaultLayout>
