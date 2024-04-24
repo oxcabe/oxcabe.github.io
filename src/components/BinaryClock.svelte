@@ -29,7 +29,7 @@
   };
 </script>
 
-<article id="binaryclock" class="grid grid-rows-2 grid-flow-col gap-4 text-2xl">
+<article id="binaryclock" class="grid grid-rows-2 grid-flow-col gap-4 text-2xl text-center">
   {#each numberToBinarySegments(date, 4) as segment}
     <span>{segment}</span>
   {/each}
