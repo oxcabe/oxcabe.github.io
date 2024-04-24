@@ -2,7 +2,7 @@
 import HeaderLink from './HeaderLink.astro';
 ---
 
-<header class="flex justify-center">
+<header class="flex justify-center bg-stone-400 dark:bg-black">
 	<nav class="grid grid-cols-2 sm:grid-cols-3 w-11/12">
 		<div class="sm:col-start-2 sm:justify-self-center">
 			<HeaderLink href="/">home</HeaderLink>
@@ -10,12 +10,10 @@ import HeaderLink from './HeaderLink.astro';
 			<HeaderLink href="/blog">blog</HeaderLink>
 		</div>
 		<div class="justify-self-end">
-			<a href="https://hachyderm.io/@oxcabe" target="_blank">
-				<span>Mastodon</span>
-			</a>
-			<a href="https://github.com/oxcabe" target="_blank">
-				<span>GitHub</span>
-			</a>
+			<a class="px-1 hover:text-white hover:bg-stone-600 hover:dark:text-black hover:dark:bg-stone-300" href="https://hachyderm.io/@oxcabe" target="_blank">
+				<span>Mastodon</span></a>
+			<a class="px-1 hover:text-white hover:bg-stone-600 hover:dark:text-black hover:dark:bg-stone-300" href="https://github.com/oxcabe" target="_blank">
+				<span>GitHub</span></a>
 		</div>
 	</nav>
 </header>
