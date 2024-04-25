@@ -28,7 +28,7 @@ const numberToBinarySegments = (num: number, segmentSize: number): string[] => {
 
 <article
   id="binaryclock"
-  class="grid grid-rows-2 grid-flow-col gap-4 text-2xl text-center"
+  class="grid grid-rows-2 grid-flow-col gap-4 text-2xl text-center font-mono"
 >
   {#each numberToBinarySegments(date, 4) as segment}
     <span>{segment}</span>
