@@ -1,8 +1,9 @@
 ---
 import DefaultLayout from "../../layouts/Default.astro";
+import OxcabeChart from "../../assets/OxcabeChart.astro";
 ---
 
-<DefaultLayout>
+<DefaultLayout title="About">
   <main class="flex flex-col sm:w-2/3 xl:w-2/5 justify-evenly">
     <article>
       <h1 class="text-2xl font-bold font-sans">Óscar Carrasco</h1>
@@ -11,9 +12,31 @@ import DefaultLayout from "../../layouts/Default.astro";
           I'm a Software Engineer living in Tenerife, Canary Islands.
         </p>
         <p class="mt-4">
-          I founded <a class="font-bold" href="https://railmap.systems/" target="_blank">Railmap Systems</a>, 
-          and co-founded <a class="font-bold" href="https://gibarian.com/" target="_blank">Gibarian</a>.
+          I founded <a
+            class="font-bold"
+            href="https://railmap.systems/"
+            target="_blank">Railmap Systems</a
+          >, and co-founded <a
+            class="font-bold"
+            href="https://gibarian.com/"
+            target="_blank">Gibarian</a
+          >.
         </p>
+        <p class="mt-4">
+          My nickname, <b>oxcabe</b>, is both:
+        </p>
+        <ul class="list-disc list-inside">
+          <li class="my-1">
+            a hexadecimal value, <span class="font-mono">0xCABE</span>, which
+            corresponds to the number <em>51902<span class="text-xs align-sub">10</span></em> .
+          </li>
+          <li class="my-1">
+            an abbreviation of my real name:
+          </li>
+        </li>
+        <div class="flex justify-center my-3">
+          <OxcabeChart />
+        </div>
       </section>
     </article>
   </main>

@@ -3,11 +3,20 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.svelte";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+
+interface Props {
+  title?: string;
+}
+
+const { title } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
-  <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  <BaseHead
+    title={title ? `${title} - ${SITE_TITLE}` : SITE_TITLE}
+    description={SITE_DESCRIPTION}
+  />
   <body
     class="flex flex-col justify-between w-screen min-h-screen bg-stone-300 dark:bg-neutral-950 font-sans text-black dark:text-gray-100"
   >

@@ -5,14 +5,20 @@ import BinaryClock from "../components/BinaryClock.svelte";
 
 <DefaultLayout>
   <main class="flex flex-col sm:w-2/3 xl:w-2/5 justify-evenly">
-    <section class="font-sans">
+    <article class="font-sans">
       <h1 class="text-2xl font-bold">Hello! I'm Óscar.</h1>
-      <p class="mt-8">
-        <a class="underline underline-offset-4 text-rose-300" href="https://knowyourmeme.com/memes/my-job-is-just-beach" target="_blank">My job... is just computer.</a>
-      </p>
-    </section>
-    <section>
-      <BinaryClock client:only="svelte" />
-    </section>
+      <section>
+        <p class="mt-8 font-serif">
+          <a
+            class="underline underline-offset-4 text-rose-800 dark:text-rose-300 hover:text-rose-500 hover:dark:dark:text-rose-200"
+            href="https://knowyourmeme.com/memes/my-job-is-just-beach"
+            target="_blank"
+          >My job... is just computer.</a>
+        </p>
+      </section>
+    </article>
+    <article>
+      <BinaryClock client:load />
+    </article>
   </main>
 </DefaultLayout>
