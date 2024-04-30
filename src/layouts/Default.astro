@@ -24,6 +24,6 @@ const { title } = Astro.props;
     <div class="flex justify-center self-center w-10/12 grow my-4">
       <slot />
     </div>
-    <Footer />
+    <Footer client:load/>
   </body>
 </html>
